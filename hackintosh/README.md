@@ -114,9 +114,13 @@ BIOS设置（bios版本v3.1,升级3.4可能会装不上！）:
 
 ![image](./images/13.jpeg)
 
-**PS**: 如果你现在选择不复制EFI文件也是可以的，在PE这里也是可以复制EFI文件的，方法也就是挂载两个EFI分区，复制文件就行了
 
-> 不过如果你的硬盘不被你的主板认为第一启动盘的时候，你需要将你的系统盘设置为第一启动盘，这里我们可以使用PE系统，将clover引导作为第一启动项，如果你不知道你的主板是不是已经将你的系统盘作为第一启动盘了，那么就跟着照做吧
+
+相关文档：
+
+[Asrock deskmini 310-com hackintosh 10.14 EFI](https://blog.xjn819.com/?p=7)
+
+[z370n-wifi-hackintosh](https://github.com/qinkangdeid/z370n-wifi-hackintosh)
 
 
 
