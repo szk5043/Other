@@ -75,6 +75,8 @@ Install media now available at "/Volumes/Install macOS Mojave"
 把你准备好的EFI文件复制到刚才挂载的U盘的EFI分区即可，注意一定要带EFI文件夹名称
 ![image](./images/12.jpeg)
 
+> 若出现EFI分区磁盘空间不足，可以仅拷贝EFI下的boot和clover两个文件夹过去
+
 ## 四、BIOS设置
 
 BIOS设置（bios版本v3.1,升级3.4可能会装不上！）:
@@ -114,9 +116,13 @@ BIOS设置（bios版本v3.1,升级3.4可能会装不上！）:
 
 ![image](./images/13.jpeg)
 
+### 3、蓝牙驱动
+
+默认dw1830蓝牙无法免驱，需要拷贝`EFI`目录下的`bluetooth_kext`放入`/system/library/extensions `系统目录下，然后使用其文件夹下的`Kext Utility.app`清理一下缓存
 
 
-相关文档：
+
+**相关文档：**
 
 [Asrock deskmini 310-com hackintosh 10.14 EFI](https://blog.xjn819.com/?p=7)
 
