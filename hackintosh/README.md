@@ -118,8 +118,20 @@ BIOS设置（bios版本v3.1,升级3.4可能会装不上！）:
 
 ### 3、蓝牙驱动
 
-默认dw1830蓝牙无法免驱，需要拷贝`EFI`目录下的`bluetooth_kext`放入`/system/library/extensions `系统目录下，然后使用其文件夹下的`Kext Utility.app`清理一下缓存
+默认dw1830蓝牙无法免驱，需要拷贝`EFI/bluetooth_kext`目录下的key文件放入`/System/Library/Extensions `系统目录下，然后使用其文件夹下的`Kext Utility.app`清理一下缓存
 
+### 4、ALCPlugFix补丁
+ALCPlugFix的3.5mm音频补丁的3.5mm音频补丁，双击`EFI/ALCPlugFix/install双击自动安装.command`脚本
+
+### 5、开机启动mac os
+开机启动mac os无需手动敲回车键 或者 选择需要引导，通过Clover修改`EEI/CLOVER/config.plist`文件
+![image](./images/14.jpg)
+
+- 默认应道卷名 ： 改成 你安装mac的硬盘卷名
+- 等待时间：开启你希望多长时间启动mac
+
+### 6、扩展USB补丁(可选)
+将`EFI/USB_Extend`目录下的key文件放入`/System/Library/Extensions `系统目录下，然后使用其文件夹下的`Kext Utility.app`清理一下缓存
 
 
 **相关文档：**
